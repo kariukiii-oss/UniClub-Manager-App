@@ -75,4 +75,14 @@ Public Class Form1
         Dim regScreen As New ucRegister()
         SwitchScreen(regScreen)
     End Sub
+
+    Private Sub BtnAttendance_Click(sender As Object, e As EventArgs) Handles btnAttendance.Click
+        Dim attendancePage As New ucAttendance()
+        SwitchScreen(attendancePage)
+    End Sub
+
+    Private Sub btnEvents_Click(sender As Object, e As EventArgs) Handles btnEvents.Click
+        Dim eventsPage As New ucEvents()
+        SwitchScreen(eventsPage)
+    End Sub
 End Class
