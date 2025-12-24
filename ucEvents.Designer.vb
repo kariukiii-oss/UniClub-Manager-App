@@ -23,6 +23,8 @@ Partial Class ucEvents
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         FlowLayoutPanel1 = New FlowLayoutPanel()
+        Label3 = New Label()
+        TextBox2 = New TextBox()
         lblFullName = New Label()
         txtEventName = New TextBox()
         lblEmail = New Label()
@@ -31,6 +33,8 @@ Partial Class ucEvents
         txtLocation = New TextBox()
         Label1 = New Label()
         DateTimePicker1 = New DateTimePicker()
+        Label2 = New Label()
+        TextBox1 = New TextBox()
         btnAddEvent = New Button()
         btnClear = New Button()
         lblRegisterMember = New Label()
@@ -40,6 +44,8 @@ Partial Class ucEvents
         ' FlowLayoutPanel1
         ' 
         FlowLayoutPanel1.BackColor = SystemColors.MenuHighlight
+        FlowLayoutPanel1.Controls.Add(Label3)
+        FlowLayoutPanel1.Controls.Add(TextBox2)
         FlowLayoutPanel1.Controls.Add(lblFullName)
         FlowLayoutPanel1.Controls.Add(txtEventName)
         FlowLayoutPanel1.Controls.Add(lblEmail)
@@ -48,105 +54,142 @@ Partial Class ucEvents
         FlowLayoutPanel1.Controls.Add(txtLocation)
         FlowLayoutPanel1.Controls.Add(Label1)
         FlowLayoutPanel1.Controls.Add(DateTimePicker1)
-        FlowLayoutPanel1.Location = New Point(103, 51)
-        FlowLayoutPanel1.Margin = New Padding(4)
+        FlowLayoutPanel1.Controls.Add(Label2)
+        FlowLayoutPanel1.Controls.Add(TextBox1)
+        FlowLayoutPanel1.Location = New Point(147, 49)
         FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        FlowLayoutPanel1.Size = New Size(435, 341)
+        FlowLayoutPanel1.Size = New Size(332, 312)
         FlowLayoutPanel1.TabIndex = 22
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.ForeColor = SystemColors.Control
+        Label3.Location = New Point(3, 0)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(75, 23)
+        Label3.TabIndex = 28
+        Label3.Text = "Event ID"
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.Location = New Point(84, 3)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(238, 27)
+        TextBox2.TabIndex = 29
         ' 
         ' lblFullName
         ' 
         lblFullName.AutoSize = True
-        lblFullName.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblFullName.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblFullName.ForeColor = SystemColors.Control
-        lblFullName.Location = New Point(4, 0)
-        lblFullName.Margin = New Padding(4, 0, 4, 0)
+        lblFullName.Location = New Point(3, 33)
         lblFullName.Name = "lblFullName"
-        lblFullName.Size = New Size(151, 32)
+        lblFullName.Size = New Size(104, 23)
         lblFullName.TabIndex = 9
         lblFullName.Text = "Event Name"
         ' 
         ' txtEventName
         ' 
-        txtEventName.Location = New Point(4, 36)
-        txtEventName.Margin = New Padding(4)
+        txtEventName.Location = New Point(3, 59)
         txtEventName.Name = "txtEventName"
-        txtEventName.Size = New Size(398, 31)
+        txtEventName.Size = New Size(319, 27)
         txtEventName.TabIndex = 17
         ' 
         ' lblEmail
         ' 
         lblEmail.AutoSize = True
-        lblEmail.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblEmail.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblEmail.ForeColor = SystemColors.Control
-        lblEmail.Location = New Point(4, 71)
-        lblEmail.Margin = New Padding(4, 0, 4, 0)
+        lblEmail.Location = New Point(3, 89)
         lblEmail.Name = "lblEmail"
-        lblEmail.Size = New Size(84, 32)
+        lblEmail.Size = New Size(58, 23)
         lblEmail.TabIndex = 18
         lblEmail.Text = "Venue"
         ' 
         ' txtVenue
         ' 
-        txtVenue.Location = New Point(4, 107)
-        txtVenue.Margin = New Padding(4)
+        txtVenue.Location = New Point(3, 115)
         txtVenue.Name = "txtVenue"
-        txtVenue.Size = New Size(398, 31)
+        txtVenue.Size = New Size(319, 27)
         txtVenue.TabIndex = 16
         ' 
         ' lblSpeaker
         ' 
         lblSpeaker.AutoSize = True
-        lblSpeaker.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblSpeaker.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblSpeaker.ForeColor = SystemColors.Control
-        lblSpeaker.Location = New Point(4, 142)
-        lblSpeaker.Margin = New Padding(4, 0, 4, 0)
+        lblSpeaker.Location = New Point(3, 145)
         lblSpeaker.Name = "lblSpeaker"
-        lblSpeaker.Size = New Size(112, 32)
+        lblSpeaker.Size = New Size(75, 23)
         lblSpeaker.TabIndex = 19
         lblSpeaker.Text = "Location"
         ' 
         ' txtLocation
         ' 
-        txtLocation.Location = New Point(4, 178)
-        txtLocation.Margin = New Padding(4)
+        txtLocation.Location = New Point(3, 171)
         txtLocation.Name = "txtLocation"
-        txtLocation.Size = New Size(398, 31)
+        txtLocation.Size = New Size(319, 27)
         txtLocation.TabIndex = 20
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = SystemColors.Control
-        Label1.Location = New Point(4, 213)
-        Label1.Margin = New Padding(4, 0, 4, 0)
+        Label1.Location = New Point(3, 201)
         Label1.Name = "Label1"
-        Label1.Size = New Size(67, 32)
+        Label1.Size = New Size(46, 23)
         Label1.TabIndex = 21
         Label1.Text = "Date"
         ' 
         ' DateTimePicker1
         ' 
-        DateTimePicker1.Location = New Point(3, 248)
+        DateTimePicker1.Location = New Point(2, 226)
+        DateTimePicker1.Margin = New Padding(2)
         DateTimePicker1.Name = "DateTimePicker1"
-        DateTimePicker1.Size = New Size(399, 31)
+        DateTimePicker1.Size = New Size(320, 27)
         DateTimePicker1.TabIndex = 20
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = SystemColors.Control
+        Label2.Location = New Point(3, 255)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(76, 23)
+        Label2.TabIndex = 26
+        Label2.Text = "Capacity"
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Location = New Point(3, 281)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(319, 27)
+        TextBox1.TabIndex = 27
         ' 
         ' btnAddEvent
         ' 
-        btnAddEvent.Location = New Point(171, 399)
+        btnAddEvent.BackColor = Color.SkyBlue
+        btnAddEvent.FlatStyle = FlatStyle.Popup
+        btnAddEvent.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnAddEvent.Location = New Point(185, 366)
+        btnAddEvent.Margin = New Padding(2)
         btnAddEvent.Name = "btnAddEvent"
-        btnAddEvent.Size = New Size(112, 34)
+        btnAddEvent.Size = New Size(107, 35)
         btnAddEvent.TabIndex = 21
         btnAddEvent.Text = "ADD"
-        btnAddEvent.UseVisualStyleBackColor = True
+        btnAddEvent.UseVisualStyleBackColor = False
         ' 
         ' btnClear
         ' 
-        btnClear.Location = New Point(315, 399)
+        btnClear.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnClear.Location = New Point(318, 366)
+        btnClear.Margin = New Padding(2)
         btnClear.Name = "btnClear"
-        btnClear.Size = New Size(112, 34)
+        btnClear.Size = New Size(107, 35)
         btnClear.TabIndex = 22
         btnClear.Text = "CLEAR"
         btnClear.UseVisualStyleBackColor = True
@@ -154,26 +197,26 @@ Partial Class ucEvents
         ' lblRegisterMember
         ' 
         lblRegisterMember.AutoSize = True
-        lblRegisterMember.Font = New Font("Imprint MT Shadow", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblRegisterMember.Font = New Font("Imprint MT Shadow", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblRegisterMember.ForeColor = SystemColors.Highlight
-        lblRegisterMember.Location = New Point(236, 5)
-        lblRegisterMember.Margin = New Padding(4, 0, 4, 0)
+        lblRegisterMember.Location = New Point(221, 13)
         lblRegisterMember.Name = "lblRegisterMember"
-        lblRegisterMember.Size = New Size(155, 42)
+        lblRegisterMember.Size = New Size(193, 33)
         lblRegisterMember.TabIndex = 23
-        lblRegisterMember.Text = "EVENT"
+        lblRegisterMember.Text = "Event Details"
         lblRegisterMember.TextAlign = ContentAlignment.TopCenter
         ' 
         ' ucEvents
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         Controls.Add(lblRegisterMember)
         Controls.Add(FlowLayoutPanel1)
         Controls.Add(btnClear)
         Controls.Add(btnAddEvent)
+        Margin = New Padding(2)
         Name = "ucEvents"
-        Size = New Size(771, 461)
+        Size = New Size(617, 418)
         FlowLayoutPanel1.ResumeLayout(False)
         FlowLayoutPanel1.PerformLayout()
         ResumeLayout(False)
@@ -191,5 +234,9 @@ Partial Class ucEvents
     Friend WithEvents txtLocation As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents lblRegisterMember As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents TextBox2 As TextBox
 
 End Class

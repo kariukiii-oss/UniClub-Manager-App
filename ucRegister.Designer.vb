@@ -29,12 +29,16 @@ Partial Class ucRegister
         btnSubmitRegistration = New Button()
         btnCancelRegistration = New Button()
         FlowLayoutPanel1 = New FlowLayoutPanel()
+        Label2 = New Label()
+        TextBox2 = New TextBox()
         lblFullName = New Label()
         lblEmail = New Label()
         lblCourse = New Label()
         txtCourse = New TextBox()
         lblDepartment = New Label()
         txtDepartment = New TextBox()
+        Label1 = New Label()
+        TextBox1 = New TextBox()
         CType(picRegisterIcon, ComponentModel.ISupportInitialize).BeginInit()
         FlowLayoutPanel1.SuspendLayout()
         SuspendLayout()
@@ -42,23 +46,23 @@ Partial Class ucRegister
         ' picRegisterIcon
         ' 
         picRegisterIcon.Image = My.Resources.Resources.user
-        picRegisterIcon.Location = New Point(129, 19)
+        picRegisterIcon.Location = New Point(136, 3)
         picRegisterIcon.Name = "picRegisterIcon"
-        picRegisterIcon.Size = New Size(58, 35)
+        picRegisterIcon.Size = New Size(55, 32)
         picRegisterIcon.SizeMode = PictureBoxSizeMode.Zoom
         picRegisterIcon.TabIndex = 0
         picRegisterIcon.TabStop = False
         ' 
         ' txtFullName
         ' 
-        txtFullName.Location = New Point(3, 31)
+        txtFullName.Location = New Point(3, 59)
         txtFullName.Name = "txtFullName"
         txtFullName.Size = New Size(319, 27)
         txtFullName.TabIndex = 17
         ' 
         ' txtEmail
         ' 
-        txtEmail.Location = New Point(3, 92)
+        txtEmail.Location = New Point(3, 115)
         txtEmail.Name = "txtEmail"
         txtEmail.Size = New Size(319, 27)
         txtEmail.TabIndex = 16
@@ -66,11 +70,11 @@ Partial Class ucRegister
         ' lblRegisterMember
         ' 
         lblRegisterMember.AutoSize = True
-        lblRegisterMember.Font = New Font("Imprint MT Shadow", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblRegisterMember.Font = New Font("Imprint MT Shadow", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblRegisterMember.ForeColor = SystemColors.Highlight
-        lblRegisterMember.Location = New Point(193, 19)
+        lblRegisterMember.Location = New Point(193, 3)
         lblRegisterMember.Name = "lblRegisterMember"
-        lblRegisterMember.Size = New Size(250, 35)
+        lblRegisterMember.Size = New Size(241, 33)
         lblRegisterMember.TabIndex = 18
         lblRegisterMember.Text = "Register Member"
         lblRegisterMember.TextAlign = ContentAlignment.TopCenter
@@ -79,10 +83,10 @@ Partial Class ucRegister
         ' 
         btnSubmitRegistration.BackColor = Color.SkyBlue
         btnSubmitRegistration.FlatStyle = FlatStyle.Popup
-        btnSubmitRegistration.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnSubmitRegistration.Location = New Point(151, 343)
+        btnSubmitRegistration.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSubmitRegistration.Location = New Point(157, 365)
         btnSubmitRegistration.Name = "btnSubmitRegistration"
-        btnSubmitRegistration.Size = New Size(132, 44)
+        btnSubmitRegistration.Size = New Size(124, 34)
         btnSubmitRegistration.TabIndex = 19
         btnSubmitRegistration.Text = "Submit"
         btnSubmitRegistration.UseVisualStyleBackColor = False
@@ -91,10 +95,10 @@ Partial Class ucRegister
         ' 
         btnCancelRegistration.BackColor = SystemColors.ButtonFace
         btnCancelRegistration.FlatStyle = FlatStyle.Popup
-        btnCancelRegistration.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnCancelRegistration.Location = New Point(306, 343)
+        btnCancelRegistration.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnCancelRegistration.Location = New Point(301, 365)
         btnCancelRegistration.Name = "btnCancelRegistration"
-        btnCancelRegistration.Size = New Size(137, 44)
+        btnCancelRegistration.Size = New Size(120, 34)
         btnCancelRegistration.TabIndex = 20
         btnCancelRegistration.Text = "Cancel"
         btnCancelRegistration.UseVisualStyleBackColor = False
@@ -102,6 +106,8 @@ Partial Class ucRegister
         ' FlowLayoutPanel1
         ' 
         FlowLayoutPanel1.BackColor = SystemColors.MenuHighlight
+        FlowLayoutPanel1.Controls.Add(Label2)
+        FlowLayoutPanel1.Controls.Add(TextBox2)
         FlowLayoutPanel1.Controls.Add(lblFullName)
         FlowLayoutPanel1.Controls.Add(txtFullName)
         FlowLayoutPanel1.Controls.Add(lblEmail)
@@ -110,47 +116,67 @@ Partial Class ucRegister
         FlowLayoutPanel1.Controls.Add(txtCourse)
         FlowLayoutPanel1.Controls.Add(lblDepartment)
         FlowLayoutPanel1.Controls.Add(txtDepartment)
-        FlowLayoutPanel1.Location = New Point(129, 70)
+        FlowLayoutPanel1.Controls.Add(Label1)
+        FlowLayoutPanel1.Controls.Add(TextBox1)
+        FlowLayoutPanel1.Location = New Point(132, 39)
         FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        FlowLayoutPanel1.Size = New Size(332, 254)
+        FlowLayoutPanel1.Size = New Size(332, 320)
         FlowLayoutPanel1.TabIndex = 21
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = SystemColors.Control
+        Label2.Location = New Point(3, 0)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(97, 23)
+        Label2.TabIndex = 27
+        Label2.Text = "Member ID"
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.Location = New Point(106, 3)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(216, 27)
+        TextBox2.TabIndex = 28
         ' 
         ' lblFullName
         ' 
         lblFullName.AutoSize = True
-        lblFullName.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblFullName.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblFullName.ForeColor = SystemColors.Control
-        lblFullName.Location = New Point(3, 0)
+        lblFullName.Location = New Point(3, 33)
         lblFullName.Name = "lblFullName"
-        lblFullName.Size = New Size(68, 28)
+        lblFullName.Size = New Size(56, 23)
         lblFullName.TabIndex = 9
         lblFullName.Text = "Name"
         ' 
         ' lblEmail
         ' 
         lblEmail.AutoSize = True
-        lblEmail.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblEmail.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblEmail.ForeColor = SystemColors.Control
-        lblEmail.Location = New Point(3, 61)
+        lblEmail.Location = New Point(3, 89)
         lblEmail.Name = "lblEmail"
-        lblEmail.Size = New Size(64, 28)
+        lblEmail.Size = New Size(51, 23)
         lblEmail.TabIndex = 18
         lblEmail.Text = "Email"
         ' 
         ' lblCourse
         ' 
         lblCourse.AutoSize = True
-        lblCourse.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblCourse.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblCourse.ForeColor = SystemColors.Control
-        lblCourse.Location = New Point(3, 122)
+        lblCourse.Location = New Point(3, 145)
         lblCourse.Name = "lblCourse"
-        lblCourse.Size = New Size(76, 28)
+        lblCourse.Size = New Size(63, 23)
         lblCourse.TabIndex = 19
         lblCourse.Text = "Course"
         ' 
         ' txtCourse
         ' 
-        txtCourse.Location = New Point(3, 153)
+        txtCourse.Location = New Point(3, 171)
         txtCourse.Name = "txtCourse"
         txtCourse.Size = New Size(319, 27)
         txtCourse.TabIndex = 22
@@ -158,20 +184,38 @@ Partial Class ucRegister
         ' lblDepartment
         ' 
         lblDepartment.AutoSize = True
-        lblDepartment.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblDepartment.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblDepartment.ForeColor = SystemColors.Control
-        lblDepartment.Location = New Point(3, 183)
+        lblDepartment.Location = New Point(3, 201)
         lblDepartment.Name = "lblDepartment"
-        lblDepartment.Size = New Size(127, 28)
+        lblDepartment.Size = New Size(102, 23)
         lblDepartment.TabIndex = 23
         lblDepartment.Text = "Department"
         ' 
         ' txtDepartment
         ' 
-        txtDepartment.Location = New Point(3, 214)
+        txtDepartment.Location = New Point(3, 227)
         txtDepartment.Name = "txtDepartment"
         txtDepartment.Size = New Size(319, 27)
         txtDepartment.TabIndex = 24
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = SystemColors.Control
+        Label1.Location = New Point(3, 257)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(127, 23)
+        Label1.TabIndex = 25
+        Label1.Text = "Phone Number"
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Location = New Point(3, 283)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(319, 27)
+        TextBox1.TabIndex = 26
         ' 
         ' ucRegister
         ' 
@@ -205,5 +249,9 @@ Partial Class ucRegister
     Friend WithEvents txtCourse As TextBox
     Friend WithEvents lblDepartment As Label
     Friend WithEvents txtDepartment As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents TextBox2 As TextBox
 
 End Class
