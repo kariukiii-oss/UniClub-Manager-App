@@ -8,7 +8,7 @@ Public Class Form1
             If conn.State = ConnectionState.Open Then conn.Close()
             conn.Open()
 
-            Dim sql As String = "SELECT TOP 3 FullName, Department, JoinDate, Course FROM Members ORDER BY JoinDate DESC"
+            Dim sql As String = "SELECT TOP 3 FullName, Department, PhoneNumber, Course FROM Members ORDER BY JoinDate DESC"
             Dim adapter As New OleDbDataAdapter(sql, conn)
             Dim dt As New DataTable()
 
@@ -72,7 +72,7 @@ Public Class Form1
     End Sub
 
     Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
-        Dim regScreen As New ucRegister()
+        Dim regScreen As New ucRegister
         SwitchScreen(regScreen)
     End Sub
 
@@ -84,5 +84,10 @@ Public Class Form1
     Private Sub btnEvents_Click(sender As Object, e As EventArgs) Handles btnEvents.Click
         Dim eventsPage As New ucEvents()
         SwitchScreen(eventsPage)
+    End Sub
+
+    Private Sub btnDashboard_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click
+        Dim dashboardPage As New ucDashboard()
+        SwitchScreen(dashboardPage)
     End Sub
 End Class

@@ -46,9 +46,9 @@ Partial Class ucRegister
         ' picRegisterIcon
         ' 
         picRegisterIcon.Image = My.Resources.Resources.user
-        picRegisterIcon.Location = New Point(136, 3)
+        picRegisterIcon.Location = New Point(155, 3)
         picRegisterIcon.Name = "picRegisterIcon"
-        picRegisterIcon.Size = New Size(55, 32)
+        picRegisterIcon.Size = New Size(32, 32)
         picRegisterIcon.SizeMode = PictureBoxSizeMode.Zoom
         picRegisterIcon.TabIndex = 0
         picRegisterIcon.TabStop = False
@@ -84,11 +84,11 @@ Partial Class ucRegister
         btnSubmitRegistration.BackColor = Color.SkyBlue
         btnSubmitRegistration.FlatStyle = FlatStyle.Popup
         btnSubmitRegistration.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnSubmitRegistration.Location = New Point(157, 365)
+        btnSubmitRegistration.Location = New Point(171, 365)
         btnSubmitRegistration.Name = "btnSubmitRegistration"
         btnSubmitRegistration.Size = New Size(124, 34)
         btnSubmitRegistration.TabIndex = 19
-        btnSubmitRegistration.Text = "Submit"
+        btnSubmitRegistration.Text = "SAVE"
         btnSubmitRegistration.UseVisualStyleBackColor = False
         ' 
         ' btnCancelRegistration
@@ -100,7 +100,7 @@ Partial Class ucRegister
         btnCancelRegistration.Name = "btnCancelRegistration"
         btnCancelRegistration.Size = New Size(120, 34)
         btnCancelRegistration.TabIndex = 20
-        btnCancelRegistration.Text = "Cancel"
+        btnCancelRegistration.Text = "CLEAR"
         btnCancelRegistration.UseVisualStyleBackColor = False
         ' 
         ' FlowLayoutPanel1

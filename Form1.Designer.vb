@@ -24,6 +24,8 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         pnlLeftSide = New Panel()
+        Panel2 = New Panel()
+        btnDashboard = New Button()
         lblAppName = New Label()
         pnlOnButtonEvents = New Panel()
         btnEvents = New Button()
@@ -67,6 +69,8 @@ Partial Class Form1
         ' pnlLeftSide
         ' 
         pnlLeftSide.BackColor = SystemColors.Highlight
+        pnlLeftSide.Controls.Add(Panel2)
+        pnlLeftSide.Controls.Add(btnDashboard)
         pnlLeftSide.Controls.Add(lblAppName)
         pnlLeftSide.Controls.Add(pnlOnButtonEvents)
         pnlLeftSide.Controls.Add(btnEvents)
@@ -76,20 +80,42 @@ Partial Class Form1
         pnlLeftSide.Controls.Add(btnRegister)
         pnlLeftSide.Dock = DockStyle.Left
         pnlLeftSide.Location = New Point(0, 0)
-        pnlLeftSide.Margin = New Padding(4, 4, 4, 4)
         pnlLeftSide.Name = "pnlLeftSide"
-        pnlLeftSide.Size = New Size(312, 566)
+        pnlLeftSide.Size = New Size(250, 453)
         pnlLeftSide.TabIndex = 0
+        ' 
+        ' Panel2
+        ' 
+        Panel2.BackColor = Color.SkyBlue
+        Panel2.Location = New Point(0, 351)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(21, 47)
+        Panel2.TabIndex = 10
+        ' 
+        ' btnDashboard
+        ' 
+        btnDashboard.FlatAppearance.BorderSize = 0
+        btnDashboard.FlatStyle = FlatStyle.Flat
+        btnDashboard.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnDashboard.ForeColor = SystemColors.Window
+        btnDashboard.Image = CType(resources.GetObject("btnDashboard.Image"), Image)
+        btnDashboard.ImageAlign = ContentAlignment.MiddleLeft
+        btnDashboard.Location = New Point(27, 148)
+        btnDashboard.Name = "btnDashboard"
+        btnDashboard.Size = New Size(220, 47)
+        btnDashboard.TabIndex = 9
+        btnDashboard.Text = " Dashboard"
+        btnDashboard.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnDashboard.UseVisualStyleBackColor = True
         ' 
         ' lblAppName
         ' 
         lblAppName.AutoSize = True
         lblAppName.Font = New Font("Imprint MT Shadow", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblAppName.ForeColor = SystemColors.HighlightText
-        lblAppName.Location = New Point(15, 54)
-        lblAppName.Margin = New Padding(4, 0, 4, 0)
+        lblAppName.Location = New Point(12, 43)
         lblAppName.Name = "lblAppName"
-        lblAppName.Size = New Size(263, 94)
+        lblAppName.Size = New Size(226, 80)
         lblAppName.TabIndex = 8
         lblAppName.Text = "UniClub" & vbCrLf & "Manager App" & vbCrLf
         lblAppName.TextAlign = ContentAlignment.TopCenter
@@ -97,10 +123,9 @@ Partial Class Form1
         ' pnlOnButtonEvents
         ' 
         pnlOnButtonEvents.BackColor = Color.SkyBlue
-        pnlOnButtonEvents.Location = New Point(0, 352)
-        pnlOnButtonEvents.Margin = New Padding(4, 4, 4, 4)
+        pnlOnButtonEvents.Location = New Point(0, 282)
         pnlOnButtonEvents.Name = "pnlOnButtonEvents"
-        pnlOnButtonEvents.Size = New Size(26, 59)
+        pnlOnButtonEvents.Size = New Size(21, 47)
         pnlOnButtonEvents.TabIndex = 6
         ' 
         ' btnEvents
@@ -111,10 +136,9 @@ Partial Class Form1
         btnEvents.ForeColor = SystemColors.Window
         btnEvents.Image = CType(resources.GetObject("btnEvents.Image"), Image)
         btnEvents.ImageAlign = ContentAlignment.MiddleLeft
-        btnEvents.Location = New Point(30, 352)
-        btnEvents.Margin = New Padding(4, 4, 4, 4)
+        btnEvents.Location = New Point(27, 351)
         btnEvents.Name = "btnEvents"
-        btnEvents.Size = New Size(279, 59)
+        btnEvents.Size = New Size(223, 47)
         btnEvents.TabIndex = 5
         btnEvents.Text = " Events"
         btnEvents.TextAlign = ContentAlignment.MiddleRight
@@ -124,10 +148,9 @@ Partial Class Form1
         ' pnlOnButtonAttendance
         ' 
         pnlOnButtonAttendance.BackColor = Color.SkyBlue
-        pnlOnButtonAttendance.Location = New Point(0, 269)
-        pnlOnButtonAttendance.Margin = New Padding(4, 4, 4, 4)
+        pnlOnButtonAttendance.Location = New Point(0, 215)
         pnlOnButtonAttendance.Name = "pnlOnButtonAttendance"
-        pnlOnButtonAttendance.Size = New Size(26, 59)
+        pnlOnButtonAttendance.Size = New Size(21, 47)
         pnlOnButtonAttendance.TabIndex = 4
         ' 
         ' btnAttendance
@@ -138,10 +161,9 @@ Partial Class Form1
         btnAttendance.ForeColor = SystemColors.Window
         btnAttendance.Image = My.Resources.Resources.verify
         btnAttendance.ImageAlign = ContentAlignment.MiddleLeft
-        btnAttendance.Location = New Point(34, 269)
-        btnAttendance.Margin = New Padding(4, 4, 4, 4)
+        btnAttendance.Location = New Point(27, 282)
         btnAttendance.Name = "btnAttendance"
-        btnAttendance.Size = New Size(279, 59)
+        btnAttendance.Size = New Size(223, 47)
         btnAttendance.TabIndex = 3
         btnAttendance.Text = " Attendance"
         btnAttendance.TextAlign = ContentAlignment.MiddleRight
@@ -151,10 +173,9 @@ Partial Class Form1
         ' pnlOnButtonRegister
         ' 
         pnlOnButtonRegister.BackColor = Color.SkyBlue
-        pnlOnButtonRegister.Location = New Point(0, 185)
-        pnlOnButtonRegister.Margin = New Padding(4, 4, 4, 4)
+        pnlOnButtonRegister.Location = New Point(0, 148)
         pnlOnButtonRegister.Name = "pnlOnButtonRegister"
-        pnlOnButtonRegister.Size = New Size(26, 59)
+        pnlOnButtonRegister.Size = New Size(21, 47)
         pnlOnButtonRegister.TabIndex = 2
         ' 
         ' btnRegister
@@ -165,10 +186,9 @@ Partial Class Form1
         btnRegister.ForeColor = SystemColors.Window
         btnRegister.Image = My.Resources.Resources.add_user
         btnRegister.ImageAlign = ContentAlignment.MiddleLeft
-        btnRegister.Location = New Point(34, 185)
-        btnRegister.Margin = New Padding(4, 4, 4, 4)
+        btnRegister.Location = New Point(30, 215)
         btnRegister.Name = "btnRegister"
-        btnRegister.Size = New Size(275, 59)
+        btnRegister.Size = New Size(220, 47)
         btnRegister.TabIndex = 2
         btnRegister.Text = " Register"
         btnRegister.TextImageRelation = TextImageRelation.ImageBeforeText
@@ -180,10 +200,9 @@ Partial Class Form1
         pnlTopSide.Controls.Add(Panel1)
         pnlTopSide.Controls.Add(pnlDashboard)
         pnlTopSide.Dock = DockStyle.Top
-        pnlTopSide.Location = New Point(312, 0)
-        pnlTopSide.Margin = New Padding(4, 4, 4, 4)
+        pnlTopSide.Location = New Point(250, 0)
         pnlTopSide.Name = "pnlTopSide"
-        pnlTopSide.Size = New Size(772, 55)
+        pnlTopSide.Size = New Size(617, 44)
         pnlTopSide.TabIndex = 1
         ' 
         ' Panel1
@@ -191,20 +210,18 @@ Partial Class Form1
         Panel1.Controls.Add(picMinimize)
         Panel1.Controls.Add(picMaximize)
         Panel1.Controls.Add(picClose)
-        Panel1.Location = New Point(645, 11)
-        Panel1.Margin = New Padding(4, 4, 4, 4)
+        Panel1.Location = New Point(516, 9)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(122, 35)
+        Panel1.Size = New Size(98, 28)
         Panel1.TabIndex = 9
         ' 
         ' picMinimize
         ' 
         picMinimize.BackgroundImageLayout = ImageLayout.Zoom
         picMinimize.Image = CType(resources.GetObject("picMinimize.Image"), Image)
-        picMinimize.Location = New Point(4, 0)
-        picMinimize.Margin = New Padding(4, 4, 4, 4)
+        picMinimize.Location = New Point(3, 0)
         picMinimize.Name = "picMinimize"
-        picMinimize.Size = New Size(30, 30)
+        picMinimize.Size = New Size(24, 24)
         picMinimize.TabIndex = 12
         picMinimize.TabStop = False
         ' 
@@ -212,10 +229,9 @@ Partial Class Form1
         ' 
         picMaximize.BackgroundImageLayout = ImageLayout.Zoom
         picMaximize.Image = CType(resources.GetObject("picMaximize.Image"), Image)
-        picMaximize.Location = New Point(42, 0)
-        picMaximize.Margin = New Padding(4, 4, 4, 4)
+        picMaximize.Location = New Point(34, 0)
         picMaximize.Name = "picMaximize"
-        picMaximize.Size = New Size(32, 35)
+        picMaximize.Size = New Size(26, 28)
         picMaximize.TabIndex = 13
         picMaximize.TabStop = False
         ' 
@@ -223,27 +239,24 @@ Partial Class Form1
         ' 
         picClose.BackgroundImageLayout = ImageLayout.Zoom
         picClose.Image = My.Resources.Resources.cross
-        picClose.Location = New Point(82, 0)
-        picClose.Margin = New Padding(4, 4, 4, 4)
+        picClose.Location = New Point(66, 0)
         picClose.Name = "picClose"
-        picClose.Size = New Size(32, 35)
+        picClose.Size = New Size(26, 28)
         picClose.TabIndex = 11
         picClose.TabStop = False
         ' 
         ' pnlDashboard
         ' 
-        pnlDashboard.Location = New Point(0, 54)
-        pnlDashboard.Margin = New Padding(4, 4, 4, 4)
+        pnlDashboard.Location = New Point(0, 43)
         pnlDashboard.Name = "pnlDashboard"
-        pnlDashboard.Size = New Size(768, 512)
+        pnlDashboard.Size = New Size(614, 410)
         pnlDashboard.TabIndex = 2
         ' 
         ' DateTimePicker1
         ' 
-        DateTimePicker1.Location = New Point(470, 0)
-        DateTimePicker1.Margin = New Padding(4, 4, 4, 4)
+        DateTimePicker1.Location = New Point(376, 0)
         DateTimePicker1.Name = "DateTimePicker1"
-        DateTimePicker1.Size = New Size(296, 31)
+        DateTimePicker1.Size = New Size(238, 27)
         DateTimePicker1.TabIndex = 3
         ' 
         ' lblWelcome
@@ -251,10 +264,9 @@ Partial Class Form1
         lblWelcome.AutoSize = True
         lblWelcome.Font = New Font("Imprint MT Shadow", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblWelcome.ForeColor = SystemColors.Highlight
-        lblWelcome.Location = New Point(34, 46)
-        lblWelcome.Margin = New Padding(4, 0, 4, 0)
+        lblWelcome.Location = New Point(27, 37)
         lblWelcome.Name = "lblWelcome"
-        lblWelcome.Size = New Size(640, 47)
+        lblWelcome.Size = New Size(546, 40)
         lblWelcome.TabIndex = 8
         lblWelcome.Text = "Welcome to the UniClub Manager"
         ' 
@@ -263,10 +275,9 @@ Partial Class Form1
         lblMemberCount.AutoSize = True
         lblMemberCount.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblMemberCount.ForeColor = SystemColors.Control
-        lblMemberCount.Location = New Point(4, 0)
-        lblMemberCount.Margin = New Padding(4, 0, 4, 0)
+        lblMemberCount.Location = New Point(3, 0)
         lblMemberCount.Name = "lblMemberCount"
-        lblMemberCount.Size = New Size(117, 64)
+        lblMemberCount.Size = New Size(91, 56)
         lblMemberCount.TabIndex = 9
         lblMemberCount.Text = "Member Count"
         ' 
@@ -274,19 +285,17 @@ Partial Class Form1
         ' 
         FlowLayoutPanel1.BackColor = SystemColors.MenuHighlight
         FlowLayoutPanel1.Controls.Add(lblMemberCount)
-        FlowLayoutPanel1.Location = New Point(170, 166)
-        FlowLayoutPanel1.Margin = New Padding(4, 4, 4, 4)
+        FlowLayoutPanel1.Location = New Point(136, 133)
         FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        FlowLayoutPanel1.Size = New Size(126, 75)
+        FlowLayoutPanel1.Size = New Size(101, 60)
         FlowLayoutPanel1.TabIndex = 11
         ' 
         ' PictureBox1
         ' 
         PictureBox1.Image = My.Resources.Resources.group
-        PictureBox1.Location = New Point(90, 166)
-        PictureBox1.Margin = New Padding(4, 4, 4, 4)
+        PictureBox1.Location = New Point(72, 133)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(80, 80)
+        PictureBox1.Size = New Size(64, 64)
         PictureBox1.TabIndex = 12
         PictureBox1.TabStop = False
         ' 
@@ -294,20 +303,18 @@ Partial Class Form1
         ' 
         lblEvent.AutoSize = True
         lblEvent.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblEvent.Location = New Point(409, 128)
-        lblEvent.Margin = New Padding(4, 0, 4, 0)
+        lblEvent.Location = New Point(327, 102)
         lblEvent.Name = "lblEvent"
-        lblEvent.Size = New Size(172, 32)
+        lblEvent.Size = New Size(144, 28)
         lblEvent.TabIndex = 13
         lblEvent.Text = "EVENT COUNT"
         ' 
         ' PictureBox2
         ' 
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(409, 166)
-        PictureBox2.Margin = New Padding(4, 4, 4, 4)
+        PictureBox2.Location = New Point(327, 133)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(80, 80)
+        PictureBox2.Size = New Size(64, 64)
         PictureBox2.TabIndex = 14
         PictureBox2.TabStop = False
         ' 
@@ -315,10 +322,9 @@ Partial Class Form1
         ' 
         FlowLayoutPanel2.BackColor = SystemColors.MenuHighlight
         FlowLayoutPanel2.Controls.Add(lblEventCount)
-        FlowLayoutPanel2.Location = New Point(496, 166)
-        FlowLayoutPanel2.Margin = New Padding(4, 4, 4, 4)
+        FlowLayoutPanel2.Location = New Point(397, 133)
         FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        FlowLayoutPanel2.Size = New Size(126, 75)
+        FlowLayoutPanel2.Size = New Size(101, 60)
         FlowLayoutPanel2.TabIndex = 16
         ' 
         ' lblEventCount
@@ -326,10 +332,9 @@ Partial Class Form1
         lblEventCount.AutoSize = True
         lblEventCount.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblEventCount.ForeColor = SystemColors.Control
-        lblEventCount.Location = New Point(4, 0)
-        lblEventCount.Margin = New Padding(4, 0, 4, 0)
+        lblEventCount.Location = New Point(3, 0)
         lblEventCount.Name = "lblEventCount"
-        lblEventCount.Size = New Size(84, 64)
+        lblEventCount.Size = New Size(71, 56)
         lblEventCount.TabIndex = 9
         lblEventCount.Text = "Event Count"
         ' 
@@ -339,23 +344,21 @@ Partial Class Form1
         dgvRecentMembers.AllowUserToDeleteRows = False
         dgvRecentMembers.BackgroundColor = SystemColors.Control
         dgvRecentMembers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvRecentMembers.Location = New Point(90, 324)
-        dgvRecentMembers.Margin = New Padding(4, 4, 4, 4)
+        dgvRecentMembers.Location = New Point(72, 259)
         dgvRecentMembers.Name = "dgvRecentMembers"
         dgvRecentMembers.ReadOnly = True
         dgvRecentMembers.RowHeadersVisible = False
         dgvRecentMembers.RowHeadersWidth = 51
-        dgvRecentMembers.Size = New Size(550, 146)
+        dgvRecentMembers.Size = New Size(440, 117)
         dgvRecentMembers.TabIndex = 17
         ' 
         ' lblRecentEntries
         ' 
         lblRecentEntries.AutoSize = True
         lblRecentEntries.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblRecentEntries.Location = New Point(226, 285)
-        lblRecentEntries.Margin = New Padding(4, 0, 4, 0)
+        lblRecentEntries.Location = New Point(181, 228)
         lblRecentEntries.Name = "lblRecentEntries"
-        lblRecentEntries.Size = New Size(269, 32)
+        lblRecentEntries.Size = New Size(224, 28)
         lblRecentEntries.TabIndex = 18
         lblRecentEntries.Text = "MOST RECENT ENTRIES"
         ' 
@@ -372,33 +375,30 @@ Partial Class Form1
         pnlMain.Controls.Add(lblWelcome)
         pnlMain.Controls.Add(DateTimePicker1)
         pnlMain.Dock = DockStyle.Fill
-        pnlMain.Location = New Point(312, 55)
-        pnlMain.Margin = New Padding(4, 4, 4, 4)
+        pnlMain.Location = New Point(250, 44)
         pnlMain.Name = "pnlMain"
-        pnlMain.Size = New Size(772, 511)
+        pnlMain.Size = New Size(617, 409)
         pnlMain.TabIndex = 19
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(90, 128)
-        Label3.Margin = New Padding(4, 0, 4, 0)
+        Label3.Location = New Point(72, 102)
         Label3.Name = "Label3"
-        Label3.Size = New Size(200, 32)
+        Label3.Size = New Size(165, 28)
         Label3.TabIndex = 19
         Label3.Text = "MEMBER COUNT"
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1084, 566)
+        ClientSize = New Size(867, 453)
         Controls.Add(pnlMain)
         Controls.Add(pnlTopSide)
         Controls.Add(pnlLeftSide)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(4, 4, 4, 4)
         Name = "Form1"
         Text = "Form1"
         pnlLeftSide.ResumeLayout(False)
@@ -449,5 +449,7 @@ Partial Class Form1
     Friend WithEvents lblRecentEntries As Label
     Friend WithEvents pnlMain As Panel
     Friend WithEvents Label3 As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents btnDashboard As Button
 
 End Class

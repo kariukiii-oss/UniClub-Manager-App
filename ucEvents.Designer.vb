@@ -38,7 +38,9 @@ Partial Class ucEvents
         btnAddEvent = New Button()
         btnClear = New Button()
         lblRegisterMember = New Label()
+        PictureBox1 = New PictureBox()
         FlowLayoutPanel1.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' FlowLayoutPanel1
@@ -175,10 +177,10 @@ Partial Class ucEvents
         btnAddEvent.BackColor = Color.SkyBlue
         btnAddEvent.FlatStyle = FlatStyle.Popup
         btnAddEvent.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnAddEvent.Location = New Point(185, 366)
+        btnAddEvent.Location = New Point(192, 366)
         btnAddEvent.Margin = New Padding(2)
         btnAddEvent.Name = "btnAddEvent"
-        btnAddEvent.Size = New Size(107, 35)
+        btnAddEvent.Size = New Size(117, 35)
         btnAddEvent.TabIndex = 21
         btnAddEvent.Text = "ADD"
         btnAddEvent.UseVisualStyleBackColor = False
@@ -186,10 +188,10 @@ Partial Class ucEvents
         ' btnClear
         ' 
         btnClear.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnClear.Location = New Point(318, 366)
+        btnClear.Location = New Point(313, 366)
         btnClear.Margin = New Padding(2)
         btnClear.Name = "btnClear"
-        btnClear.Size = New Size(107, 35)
+        btnClear.Size = New Size(112, 35)
         btnClear.TabIndex = 22
         btnClear.Text = "CLEAR"
         btnClear.UseVisualStyleBackColor = True
@@ -199,17 +201,28 @@ Partial Class ucEvents
         lblRegisterMember.AutoSize = True
         lblRegisterMember.Font = New Font("Imprint MT Shadow", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblRegisterMember.ForeColor = SystemColors.Highlight
-        lblRegisterMember.Location = New Point(221, 13)
+        lblRegisterMember.Location = New Point(232, 13)
         lblRegisterMember.Name = "lblRegisterMember"
         lblRegisterMember.Size = New Size(193, 33)
         lblRegisterMember.TabIndex = 23
         lblRegisterMember.Text = "Event Details"
         lblRegisterMember.TextAlign = ContentAlignment.TopCenter
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = My.Resources.Resources.group
+        PictureBox1.Location = New Point(203, 11)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(32, 32)
+        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox1.TabIndex = 24
+        PictureBox1.TabStop = False
+        ' 
         ' ucEvents
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        Controls.Add(PictureBox1)
         Controls.Add(lblRegisterMember)
         Controls.Add(FlowLayoutPanel1)
         Controls.Add(btnClear)
@@ -219,6 +232,7 @@ Partial Class ucEvents
         Size = New Size(617, 418)
         FlowLayoutPanel1.ResumeLayout(False)
         FlowLayoutPanel1.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -238,5 +252,6 @@ Partial Class ucEvents
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
 
 End Class

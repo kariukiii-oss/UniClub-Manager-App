@@ -31,12 +31,7 @@
         DateTimePicker1.Value = Date.Now
     End Sub
 
-    Private Sub lblCourse_Click(sender As Object, e As EventArgs) Handles lblSpeaker.Click
-
-    End Sub
-
     Private Sub btnAddEvent_Click_1(sender As Object, e As EventArgs) Handles btnAddEvent.Click
-
 
         If txtEventName.Text.Trim() = "" Or
        txtVenue.Text.Trim() = "" Or
