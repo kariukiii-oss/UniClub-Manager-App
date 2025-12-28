@@ -26,13 +26,15 @@ To deploy this environment locally, follow the structure below:
 ```yaml
 Root/
 ├── 🗄️ UniClubDB.accdb       # Place in /bin/Debug/net8.0-windows/
-├── 🖥️ Form1.vb             # Dashboard Architecture
+├── 🖥️ Form1.vb
+├── 👥 ucDashboard.vb       # Dashboard Architecture
 ├── 👥 ucRegister.vb        # Registration Logic
 ├── 👥 ucAttendance.vb      # Attendance Logic
 └── 👥 ucEvents.vb          # Events Logic
 
 ```
 <div align="center">
+
 
 
 
