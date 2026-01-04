@@ -32,7 +32,6 @@
     End Sub
 
     Private Sub btnAddEvent_Click_1(sender As Object, e As EventArgs) Handles btnAddEvent.Click
-
         If txtEventName.Text.Trim() = "" Or
        txtVenue.Text.Trim() = "" Or
        txtLocation.Text.Trim() = "" Then
